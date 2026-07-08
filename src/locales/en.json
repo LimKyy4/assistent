@@ -1,0 +1,122 @@
+{
+  "greeting": {
+    "morning": "Good morning",
+    "afternoon": "Good afternoon",
+    "evening": "Good evening",
+    "night": "Good night",
+    "hello": "Hello Master! 👋",
+    "howCanIHelp": "How can I help you?"
+  },
+  "error": {
+    "generic": "Oops, error: {{msg}} 😅",
+    "notFound": "Not found 😅",
+    "server": "Internal server error",
+    "missingNominal": "How much is the amount? 😅"
+  },
+  "success": {
+    "done": "Done! ✅",
+    "recorded": "Recorded ✅"
+  },
+  "cancel": {
+    "cancelled": "Cancelled 😊"
+  },
+  "command": {
+    "help": {
+      "title": "📋 *Kyy Assistant Commands*",
+      "intro": "Here are the commands you can use 😊",
+      "finance": "💰 *Finance:*",
+      "schedule": "📅 *Schedule:*",
+      "tabungan": "🏦 *Savings:*",
+      "wishlist": "🎯 *Wishlist:*",
+      "search": "🔍 *Search:*",
+      "general": "📌 *General:*",
+      "catat": "catat <category> <amount> — Record transaction",
+      "tambah": "tambah <category> <amount> — Record income",
+      "kurang": "kurang <category> <amount> — Record expense",
+      "cekPengeluaran": "cek pengeluaran — View expense categories",
+      "cekPemasukan": "cek pemasukan — View income categories",
+      "cekTabungan": "cek tabungan — View savings",
+      "cekKategori": "cek kategori — View all categories",
+      "cekAgenda": "cek agenda / cek jadwal — View schedule",
+      "cekReminder": "cek reminder — 7-day reminder",
+      "selesai": "selesai <id> — Mark agenda done",
+      "batal": "batal <id> — Cancel agenda",
+      "tunda": "tunda <id> [day] [time HH:MM] — Postpone agenda",
+      "jadwal": "jadwal, <activity>, <date>, <time> — Add agenda",
+      "cari": "cari <keyword> — Search transactions",
+      "setWishlist": "set wishlist <target> = <amount> — Set wishlist",
+      "cekWishlist": "cek wishlist — View wishlist",
+      "hapusWishlist": "hapus wishlist — Delete wishlist",
+      "riwayat": "riwayat <category> — View transaction history",
+      "saldo": "saldo — Check wallet balance",
+      "help": "help / menu / halo kyy — Show this menu"
+    }
+  },
+  "dompet": {
+    "saldo": "💳 *Wallet Balance*",
+    "current": "💰 Balance: {{saldo}}",
+    "empty": "Wallet is empty 😊"
+  },
+  "transaksi": {
+    "pemasukan": "Income",
+    "pengeluaran": "Expense",
+    "setoran": "Savings deposit",
+    "penarikan": "Savings withdrawal",
+    "recorded": "Recorded {{nominal}} for {{kategori}}{{keterangan}} ✅",
+    "empty": "No transactions for {{kategori}} 📭",
+    "recent": "📋 *Recent Transactions*"
+  },
+  "kategori": {
+    "empty": "No categories yet 😊",
+    "pengeluaran": "🔴 *Expense Categories:*",
+    "pemasukan": "🔵 *Income Categories:*",
+    "tabungan": "🏦 *Savings Categories:*",
+    "choose": "Which one would you like to check? 😊",
+    "notFound": "Category \"{{nama}}\" not found. Try \"lihat kategori\" first 🧐"
+  },
+  "tabungan": {
+    "title": "🏦 *Savings: {{nama}}*",
+    "saldo": "💰 Balance: {{saldo}}",
+    "added": "Added {{nominal}} to \"{{nama}}\"! Total {{total}} 🏦💰",
+    "withdrawn": "Withdrawn {{nominal}} from \"{{nama}}\". Remaining {{total}} 🏦👍",
+    "insufficient": "Sorry, \"{{nama}}\" balance is only {{saldo}}, not enough to withdraw {{nominal}} 😅"
+  },
+  "jadwal": {
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "yesterday": "Yesterday",
+    "urgent": "Urgent (overdue)",
+    "reminder": "🔔 *Reminder*",
+    "empty": "No agenda yet.",
+    "createHint": "Create one: jadwal, <activity>, <date>, <time>",
+    "done": "✅ Agenda ID {{id}} marked done!",
+    "cancelled": "❌ Agenda ID {{id}} cancelled!",
+    "postponed": "⏳ Agenda ID {{id}} postponed{{tgl}}{{jam}}!",
+    "deleted": "🗑️ Schedule ID {{id}} deleted!",
+    "format": "📌 *[ID: {{id}}]* ⏰ {{jam}} — {{kegiatan}}",
+    "morningReminder": "⏰ *Morning Reminder: Today's Schedule* ({{tgl}})",
+    "noAgenda": "_No agenda for today. Time to relax or focus on projects!_ ✨",
+    "upcomingReminder": "🔔 *Reminder: Upcoming Agenda!*",
+    "upcomingHint": "Don't miss it! ⏰",
+    "choosePrompt": "📅 *Agenda* — What would you like to see?\n\n1. Today\n2. Tomorrow\n3. Yesterday\n4. Urgent (overdue)\n\nType the number or name 😊"
+  },
+  "wishlist": {
+    "set": "Wishlist \"{{target}}\" ({{nominal}}) saved! 🎯💪",
+    "empty": "No wishlist yet. Create one: set wishlist <target> = <amount> 😊",
+    "title": "🎯 *Wishlist: {{target}}*",
+    "target": "Target: {{nominal}}",
+    "collected": "Collected: {{saldo}}",
+    "progress": "Progress: {{progress}}%",
+    "motivation": "Keep going! 💪🔥",
+    "deleted": "Wishlist deleted 🗑️😊",
+    "invalidFormat": "Format: set wishlist <target> = <amount> 😊"
+  },
+  "search": {
+    "prompt": "What are you looking for? e.g. cari lunch 😊",
+    "title": "🔍 *Search results: \"{{keyword}}\"* ({{count}} transactions)",
+    "empty": "No transactions with keyword \"{{keyword}}\" 📭"
+  },
+  "state": {
+    "expired": "Session expired. Please send a new command 😊"
+  }
+}

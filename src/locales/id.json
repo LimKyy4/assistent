@@ -1,0 +1,122 @@
+{
+  "greeting": {
+    "morning": "Selamat pagi",
+    "afternoon": "Selamat siang",
+    "evening": "Selamat sore",
+    "night": "Selamat malam",
+    "hello": "Halo Tuan Kyy! 👋",
+    "howCanIHelp": "Ada yang bisa saya bantu?"
+  },
+  "error": {
+    "generic": "Waduh error: {{msg}} 😅",
+    "notFound": "Gak ketemu Tuan 😅",
+    "server": "Terjadi kesalahan internal server",
+    "missingNominal": "Nominalnya berapa Tuan? 😅"
+  },
+  "success": {
+    "done": "Siap Tuan! ✅",
+    "recorded": "Udah tercatat ya Tuan ✅"
+  },
+  "cancel": {
+    "cancelled": "Ya udah dibatalin Tuan 😊"
+  },
+  "command": {
+    "help": {
+      "title": "📋 *Daftar Command Kyy Assistant*",
+      "intro": "Tuan Kyy bisa pake command-command ini ya 😊",
+      "finance": "💰 *Keuangan:*",
+      "schedule": "📅 *Jadwal:*",
+      "tabungan": "🏦 *Tabungan:*",
+      "wishlist": "🎯 *Wishlist:*",
+      "search": "🔍 *Cari:*",
+      "general": "📌 *Umum:*",
+      "catat": "catat <kategori> <nominal> — Catat transaksi",
+      "tambah": "tambah <kategori> <nominal> — Catat pemasukan",
+      "kurang": "kurang <kategori> <nominal> — Catat pengeluaran",
+      "cekPengeluaran": "cek pengeluaran — Lihat kategori pengeluaran",
+      "cekPemasukan": "cek pemasukan — Lihat kategori pemasukan",
+      "cekTabungan": "cek tabungan — Lihat tabungan",
+      "cekKategori": "cek kategori — Lihat semua kategori",
+      "cekAgenda": "cek agenda / cek jadwal — Lihat agenda",
+      "cekReminder": "cek reminder — Reminder 7 hari ke depan",
+      "selesai": "selesai <id> — Tandai agenda selesai",
+      "batal": "batal <id> — Batalkan agenda",
+      "tunda": "tunda <id> [hari] [jam HH:MM] — Tunda agenda",
+      "jadwal": "jadwal, <kegiatan>, <tanggal>, <jam> — Tambah agenda",
+      "cari": "cari <keyword> — Cari transaksi",
+      "setWishlist": "set wishlist <target> = <nominal> — Set wishlist",
+      "cekWishlist": "cek wishlist — Lihat wishlist",
+      "hapusWishlist": "hapus wishlist — Hapus wishlist",
+      "riwayat": "riwayat <kategori> — Lihat riwayat transaksi",
+      "saldo": "saldo — Cek saldo dompet",
+      "help": "help / menu / halo kyy — Tampilkan command ini"
+    }
+  },
+  "dompet": {
+    "saldo": "💳 *Saldo Dompet*",
+    "current": "💰 Saldo: {{saldo}}",
+    "empty": "Dompet masih kosong nih Tuan 😊"
+  },
+  "transaksi": {
+    "pemasukan": "Pemasukan",
+    "pengeluaran": "Pengeluaran",
+    "setoran": "Setoran tabungan",
+    "penarikan": "Penarikan tabungan",
+    "recorded": "Udah tercatat {{nominal}} buat {{kategori}}{{keterangan}} ✅",
+    "empty": "Belum ada transaksi {{kategori}} nih Tuan 📭",
+    "recent": "📋 *Transaksi Terbaru*"
+  },
+  "kategori": {
+    "empty": "Kategori masih kosong, Tuan Kyy 😊",
+    "pengeluaran": "🔴 *Kategori Pengeluaran:*",
+    "pemasukan": "🔵 *Kategori Pemasukan:*",
+    "tabungan": "🏦 *Kategori Tabungan:*",
+    "choose": "Mau cek yang mana, Tuan? 😊",
+    "notFound": "Kategori \"{{nama}}\" gak ketemu Tuan. Cek \"lihat kategori\" dulu yuk 🧐"
+  },
+  "tabungan": {
+    "title": "🏦 *Tabungan: {{nama}}*",
+    "saldo": "💰 Saldo: {{saldo}}",
+    "added": "Nambah {{nominal}} ke \"{{nama}}\"! Total sekarang {{total}} 🏦💰",
+    "withdrawn": "Udah ditarik {{nominal}} dari \"{{nama}}\". Sisa {{total}} 🏦👍",
+    "insufficient": "Maaf Tuan, saldo \"{{nama}}\" cuma {{saldo}}, gak cukup buat tarik {{nominal}} 😅"
+  },
+  "jadwal": {
+    "today": "Hari Ini",
+    "tomorrow": "Besok",
+    "yesterday": "Kemarin",
+    "urgent": "Urgent (terlewat)",
+    "reminder": "🔔 *Reminder Tuan Kyy*",
+    "empty": "Santai aja Tuan, belum ada agenda.",
+    "createHint": "Mau buat jadwal? Kirim: jadwal, <kegiatan>, <tanggal>, <jam>",
+    "done": "✅ Agenda ID {{id}} udah ditandai selesai!",
+    "cancelled": "❌ Agenda ID {{id}} udah dibatalin!",
+    "postponed": "⏳ Agenda ID {{id}} udah ditunda{{tgl}}{{jam}}!",
+    "deleted": "🗑️ Jadwal ID {{id}} udah dihapus Tuan!",
+    "format": "📌 *[ID: {{id}}]* ⏰ {{jam}} — {{kegiatan}}",
+    "morningReminder": "⏰ *Morning Reminder: Jadwal Aktivitas Hari Ini* ({{tgl}})",
+    "noAgenda": "_Tidak ada agenda untuk hari ini, Tuan Kyy. Waktunya santai atau fokus project!_ ✨",
+    "upcomingReminder": "🔔 *Reminder: Agenda Segera!*",
+    "upcomingHint": "Jangan sampai kelewatan ya Tuan! ⏰",
+    "choosePrompt": "📅 *Agenda* — Mau lihat yang mana, Tuan?\n\n1. Hari Ini\n2. Besok\n3. Kemarin\n4. Urgent (terlewat)\n\nKetik angka atau namanya ya 😊"
+  },
+  "wishlist": {
+    "set": "Wishlist \"{{target}}\" ({{nominal}}) udah disimpan Tuan! 🎯💪",
+    "empty": "Belum ada wishlist Tuan. Mau bikin? Kirim: set wishlist <target> = <nominal> 😊",
+    "title": "🎯 *Wishlist: {{target}}*",
+    "target": "Target: {{nominal}}",
+    "collected": "Terkumpul: {{saldo}}",
+    "progress": "Progress: {{progress}}%",
+    "motivation": "Semangat Tuan! 💪🔥",
+    "deleted": "Wishlist udah dihapus Tuan 🗑️😊",
+    "invalidFormat": "Format: set wishlist <target> = <nominal> ya Tuan 😊"
+  },
+  "search": {
+    "prompt": "Cari apa Tuan? Contoh: cari makan 😊",
+    "title": "🔍 *Hasil pencarian: \"{{keyword}}\"* ({{count}} transaksi)",
+    "empty": "Gak ada transaksi dengan kata \"{{keyword}}\" Tuan 📭"
+  },
+  "state": {
+    "expired": "Sesi udah kadaluarsa. Silakan kirim perintah baru ya Tuan 😊"
+  }
+}
