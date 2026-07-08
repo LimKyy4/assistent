@@ -1,0 +1,27 @@
+﻿Γû▓ Next.js 16.2.10 (Turbopack)
+- Environments: .env.local
+
+  Running TypeScript ...
+node.exe : Failed to type check.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Failed to type check.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+./src/pages/dashboard/transaksi/index.tsx:421:16
+Type error: Cannot find name 'Select'. Did you mean 'onselect'?
+
+  [90m419 |[0m             <div>
+  [90m420 |[0m               <label className=[32m"block text-sm font-medium text-muted-foreground 
+mb-1"[0m>[33mKat...[0m
+[31m[1m>[0m [90m421 |[0m               <[33mSelect[0m value={form.watch([32m"kategori"[0m)} 
+onValueChange={(v) => form.setValue([32m...[0m
+  [90m    |[0m                [31m[1m^[0m
+  [90m422 |[0m                 <[33mSelectTrigger[0m><[33mSelectValue[0m placeholder=[32m"Pilih kategori"[0m 
+/></[33mSelectTrigger[0m>
+  [90m423 |[0m                 <[33mSelectContent[0m>{(kategoriList || []).map((k: [33mKategoriItem[0m) => 
+(<[33mSelectIte.[0m..
+  [90m424 |[0m               </[33mSelect[0m>
+Next.js build worker exited with code: 1 and signal: null
